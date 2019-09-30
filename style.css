@@ -46,7 +46,7 @@ button {
 .banner {
     display: grid;
     grid-row-gap: 1rem;
-    grid-template-columns: minmax(25ch, 105ch);
+    grid-template-columns: minmax(25ch, 110ch);
     justify-items: center;
     justify-content: center;
     align-content: center;
