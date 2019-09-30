@@ -80,3 +80,24 @@ button {
     width: 85%;
     transform: rotate(-2deg) translateY(-5ch);
 }
+
+@media (max-width: 600px) {
+    .callout {
+        display: block;
+        margin-top: 2rem;
+    }
+    .callout__thumb {
+        display: none;
+    }
+    .banner {
+        padding: 2rem .5rem 0;
+    }
+    .banner__title {
+        text-align: left;
+        font-size: 2rem;
+    }
+    .banner__subtitle {
+        border: 0;
+        padding: 0;
+    }
+}
