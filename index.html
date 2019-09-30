@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>webMade Magazine</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans:300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="banner">
-        <img src="./images/logo.svg" alt="webMade Magazine logo">
+        <img class="banner__logo" src="./images/logo.svg" alt="webMade Magazine logo">
+        <h1 class="banner__title">Dedicated to the DIY nature of the Web</h1>
+        <p class="banner__subtitle">Do you create tools, sites, projects, apps or anything else on the web for non-business purposes? If so, you're part of a long line of amazing developers and designers that made the Web an amazing place to experiment. At webMade, we believe in this DIY philosophy. Not everything on the Web needs to be a business. In this magazine, we'll highlight methods, techniques and projects for you to build your skills with things that will serve a purpose for you.</p>
     </div>
+
+    <section class="callout">
+        <div class="callout__content">
+            <h2>Interested in Contributing?</h2>
+            <p>We're looking for people to write articles to help the next generation of makers on the web.</p>
+            <form action="/">
+                <label for="name">Name:
+                    <input type="text" name="name">
+                </label>
+                
+                <label for="email">Email:
+                    <input type="email" name="email" id="email">
+                </label>
+    
+                <label for="category">Article Type:
+                    <select name="category">
+                        <option value="Feature">Feature Article</option>
+                        <option value="Tutorial">Project Tutorial Article</option>
+                        <option value="Educational Article">Educational Article</option>
+                        <option value="Project Brief">Project Brief</option>
+                        <option value="Interview">Interview</option>
+                    </select>
+                </label>
+                
+                <label for="description">Description:
+                    <textarea name="description" id="" rows="20"></textarea>
+                </label>
+                <button type="submit">Submit your idea</button>
+            </form>
+        
+        </div>
+
+        <img class="callout__thumb" src="/images/contributor.jpg" alt="Person in front of computer writing code">
+        
+    </section>
 </body>
 </html>
