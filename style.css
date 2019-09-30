@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
 }
+::selection {
+    background-color: #6457A6;
+    color: #fff;
+}
+:focus {
+    outline: 4px solid #6457A6;
+}
 html { 
     font-size: 125%;
     font-family: 'Open Sans', arial, sans-serif;
@@ -20,7 +27,7 @@ h1, h2, h3 {
 }
 
 form > * + * {
-    margin-top: 1ch;
+    margin-top: 2ch;
 }
 label {
     display: block;
@@ -52,6 +59,7 @@ button {
     align-content: center;
     min-height: 95vh;
     text-align: center;
+    z-index: 100;
 }
 .banner__title {
     font-size: 2.75rem;
@@ -81,7 +89,7 @@ button {
 }
 .callout__thumb {
     width: 85%;
-    transform: rotate(-7.5deg) translateY(-8rem);
+    transform: rotate(-7.5deg) translateY(-10vw);
     display: grid;
     grid-template-columns:[image-start] 1fr 10px 1fr 10px 1fr [image-end];
     grid-template-rows: [image-start] 1fr 10px 1fr 10px 1fr 10px 1fr [image-end];
