@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin-bottom: 1ch;
 }
 h1, h2, h3 {
     font-family: 'Cinzel', serif;
@@ -42,10 +42,10 @@ input, textarea {
     padding: 2ch;
     border: 2px solid #000;
 }
-button {
+button, input[type="submit"] {
     background-color: #000;
     color: #fff;
-    padding: 2ch;
+    padding: 1ch 2ch;
     border: 0;
     font-size: 1rem;
 }
@@ -158,6 +158,12 @@ button {
 .outline li {
     margin-bottom: .75em;
     list-style: square;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
 }
 
 @media (max-width: 600px) {
