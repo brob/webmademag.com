@@ -10,14 +10,22 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans:300&display=swap" rel="stylesheet">
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webMadeMag">
+<meta name="twitter:title" content="webMadeMag: Dedicated to the DIY Web">
+<meta name="twitter:description" content="An online magazine dedicated to articles, projects and tutorials that help you be a DIY Web builder!">
+<meta name="twitter:image" content="https://webmademag.netlify.com/images/twitter-image.png">
+
+
 
 {% block extraScripts %}{% endblock %}
 
 </head>
 <body>
 
-
+{% block mainContent %}
 {{ content | safe }}
+{% endblock mainContent %}
 
 
     <footer class="site-footer">
