@@ -95,6 +95,7 @@ button {
 }
 .callout__thumb {
     width: 85%;
+    align-self: start;
     transform: rotate(-7.5deg) translateY(-10vw);
     display: grid;
     grid-row: 1 / 3;
@@ -109,13 +110,7 @@ button {
     margin: 1px;
 
 }
-@supports (object-fit: cover) {
-    .callout__thumb img {
-        align-self: stretch;
-        object-fit: cover;
-        object-position: bottom right
-    }
-}
+
 .callout__thumb > * {
     display: block;
 }
