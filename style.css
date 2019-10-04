@@ -83,10 +83,10 @@ button, input[type="submit"] {
 
 .callout {
     display: grid;
-    grid-template-columns: .75fr .75fr;
+    grid-template-columns: .75fr 1fr;
     grid-gap: 1rem;
     justify-items: center;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     z-index: 0;
 }
@@ -96,7 +96,7 @@ button, input[type="submit"] {
 .callout__thumb {
     width: 85%;
     align-self: start;
-    transform: rotate(-7.5deg) translateY(-10vw);
+    transform: rotate(-7.5deg) translateY(-7.5vw);
     display: grid;
     grid-row: 1 / 3;
     grid-template-columns:[image-start] 1fr 10px 1fr 10px 1fr [image-end];
@@ -166,7 +166,7 @@ button, input[type="submit"] {
     margin: 0 auto 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .callout {
         display: block;
         margin-top: 2rem;
